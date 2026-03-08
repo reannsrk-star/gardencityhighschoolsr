@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden City School RRSR</title>
+
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- Page Header -->
+    <header>
+    <div class="header-container">
+        <!-- Left: Logo + Text -->
+        <div class="logo-text">
+            <img src="pictures/logo.png" alt="Garden City Logo" class="logo">
+            <div class="header-text">
+                <h1>Garden City School</h1>
+                <p class="slogan">"Growing Minds, Shaping Futures 🦁!"</p>
+            </div>
+        </div>
+
+        <!-- Right: Mascot Image -->
+        <div class="mascot-image">
+            <img src="pictures/29183d0a-642c-4a46-9fd2-d3ce2961ea3d_removalai_preview.png" alt="School Mascot" class="mascot-image">
+        </div>
+    </div>
+</header>
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="nav-container">
+
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="location.html">Contact Details</a></li>
+        </ul>
+
+        <a href="registrationgardencity.pdf" class="apply-btn">REGISTER NOW!</a>
+
+    </div>
+</nav>
+
+<div class="slogan-banner">
+    <p class="scroll-text">
+        Growing Minds, Shaping Futures • Garden City School • Excellence in Education  •  Growing Minds, Shaping Futures • Garden City School • Excellence in Education •  Growing Minds, Shaping Futures • Garden City School • Excellence in Education  • 
+    </p>
+</div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- School Information -->
+        <section class="school-info">
+            <h1>Welcome !</h1>
+            <h2>
+                 Garden City  is a school, where excellence meets innovation! We offer a wide range of subjects and extracurricular programs designed to nurture every student’s potential.
+            </h2>
+<!-- Subjects Carousel -->
+<h3>Subjects Offered</h3>
+<div class="carousel-container">
+    <div class="carousel">
+
+        <!-- Mathematics -->
+        <div class="slide">
+            <img src="pictures/matj.jpg" alt="Mathematics">
+            <h4>Mathematics</h4>
+            <p>Core Subject</p>
+
+            <p class="more-text">
+                Mathematics helps students develop logical reasoning and problem-solving skills. 
+                Topics include algebra, geometry, statistics, and real-world applications that prepare students for higher-level learning and critical thinking.
+            </p>
+
+            <button class="learn-btn" onclick="toggleText(this)">Learn More</button>
+        </div>
+
+        <!-- Art & Design -->
+        <div class="slide">
+            <img src="pictures/artclass.jpg" alt="Art & Design">
+            <h4>Art & Design</h4>
+            <p>Elective</p>
+
+            <p class="more-text">
+                Art & Design encourages creativity and visual expression. 
+                Students explore drawing, painting, digital design, and other mediums to develop both technical skills and imaginative thinking.
+            </p>
+
+            <button class="learn-btn" onclick="toggleText(this)">Learn More</button>
+        </div>
+
+        <!-- English Literature -->
+        <div class="slide">
+            <img src="pictures/engclass.jpg" alt="English Literature">
+            <h4>English Literature</h4>
+            <p>Core Subject</p>
+
+            <p class="more-text">
+                English Literature develops reading comprehension, writing, and analytical skills. 
+                Students study poetry, novels, and plays, learning to interpret texts and express ideas clearly and creatively.
+            </p>
+
+            <button class="learn-btn" onclick="toggleText(this)">Learn More</button>
+        </div>
+
+        <!-- Music -->
+        <div class="slide">
+            <img src="pictures/musics.jpg" alt="Music">
+            <h4>Music</h4>
+            <p>Elective</p>
+
+            <p class="more-text">
+                Music introduces students to performing, composing, and understanding musical theory. 
+                They learn rhythm, melody, and harmony while developing appreciation for various musical styles and instruments.
+            </p>
+
+            <button class="learn-btn" onclick="toggleText(this)">Learn More</button>
+        </div>
+
+        <!-- Information Technology -->
+        <div class="slide">
+            <img src="pictures/ict.jpg" alt="Information Technology">
+            <h4>Information Technology</h4>
+            <p>Core Subject</p>
+
+            <p class="more-text">
+                Information Technology teaches students how to use computers, software applications, and basic coding skills. 
+                They learn to solve problems digitally and develop skills essential for modern education and the workplace.
+            </p>
+
+            <button class="learn-btn" onclick="toggleText(this)">Learn More</button>
+        </div>
+
+        <!-- Business Studies -->
+        <div class="slide">
+            <img src="pictures/buis.jpg" alt="Business Studies">
+            <h4>Business Studies</h4>
+            <p>Elective</p>
+
+            <p class="more-text">
+                Business Studies introduces students to entrepreneurship, management, and finance. 
+                They explore marketing strategies, business planning, and real-world economic concepts in a practical, hands-on way.
+            </p>
+
+            <button class="learn-btn" onclick="toggleText(this)">Learn More</button>
+        </div>
+
+    </div>
+
+    <!-- Carousel Navigation -->
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+         <!-- Clubs & Programs Section -->
+<h3>Clubs & Programs</h3>
+<div class="programs-container">
+
+    <!-- Card 1 -->
+    <a href="science.html" class="program-link">
+        <div class="program-card">
+            <img src="pictures/scienceclub.jpg" alt="Science Club">
+            <h4>Science Club</h4>
+            <p>Hands-on experiments, science fairs, and competitions to spark curiosity.</p>
+        </div>
+    </a>
+
+    <!-- Card 2 -->
+    <a href="art.html" class="program-link">
+        <div class="program-card">
+            <img src="pictures/artclass.jpg" alt="Art & Culture Club">
+            <h4>Art & Culture Club</h4>
+            <p>Painting, music, drama, and cultural performances to nurture creativity.</p>
+        </div>
+    </a>
+
+    <!-- Card 3 -->
+    <a href="internships.html" class="program-link">
+        <div class="program-card">
+            <img src="pictures/inters.png" alt="Internships">
+            <h4>Internships</h4>
+            <p>Work with local businesses and organizations to gain real-world experience.</p>
+        </div>
+    </a>
+
+    <!-- Card 4 -->
+    <a href="scholarships.html" class="program-link">
+        <div class="program-card">
+            <img src="pictures/scholars.jpg" alt="Scholarships">
+            <h4>Scholarships</h4>
+            <p>Early registration scholarships for top-performing students each year.</p>
+        </div>
+    </a>
+
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p> #586 George Price
+Blvd., Belmopan, Belize., Cityville | Phone: +123 456 7890 | Email: <a href="mailto:admin@gardencity.edu">admin@gardencity.edu</a></p>
+            <p class="slogan-footer">"Growing Minds, Shaping Futures"</p>
+            <p>
+                <a href="https://www.moecst.gov.bz/" target="_blank">Ministry of Education</a> |
+               <a href="registrationgardencity.pdf" target="_blank" class="apply-download">
+    Download Registration Form
+</a>
+            </p>
+        </div>
+    </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const carousel = document.querySelector('.carousel');
+    const slides = document.querySelectorAll('.slide');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    let currentIndex = 0;
+
+    function updateCarousel() {
+        const slideWidth = slides[0].offsetWidth + 20; // 20px is the margin
+        carousel.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
+    }
+
+    prevBtn.addEventListener('click', () => {
+        currentIndex--;
+        if (currentIndex < 0) currentIndex = slides.length - 1;
+        updateCarousel();
+    });
+
+    nextBtn.addEventListener('click', () => {
+        currentIndex++;
+        if (currentIndex >= slides.length) currentIndex = 0;
+        updateCarousel();
+    });
+
+    // Optional: Update carousel on window resize
+    window.addEventListener('resize', updateCarousel);
+});
+</script>
+<script>
+function toggleText(button) {
+    const slide = button.closest('.slide');
+    const moreText = slide.querySelector('.more-text');
+
+    if (moreText.style.display === "block") {
+        moreText.style.display = "none";
+        button.textContent = "Learn More";
+    } else {
+        moreText.style.display = "block";
+        button.textContent = "Show Less";
+    }
+}
+</script>
+</body>
+</html>
+</body>
+</html>

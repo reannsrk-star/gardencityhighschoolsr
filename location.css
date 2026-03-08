@@ -1,0 +1,310 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+
+    /* Background image */
+    background: url('pictures/highb.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header */
+header {
+    background-color: rgba(255, 165, 0, 0.9); /* orange */
+    padding: 20px 0;
+    color: white;
+}
+
+/* Flex container for header */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* logo+text left, mascot right */
+    align-items: center;            /* vertically center items */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Logo + text container */
+.logo-text {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    height:200px;
+    margin-right: 20px;
+}
+
+/* Mascot image on right */
+.mascot-image img {
+    height: auto; /* match logo height */
+    width: 300px;
+}
+h1 {
+    text-align: center;
+    color: #3892d3; /* blue theme color */
+    margin-bottom: 20px;
+     text-align: center;   /* centers text */
+    font-size: 3em;       /* makes text larger */
+    font-weight: bold;    /* optional: makes it bold */
+    margin: 20px 0;       /* spacing above/below */
+    color: #07304e;  
+   font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+
+}
+
+.slogan {
+    font-size: 1.2em;
+    margin-top: 5px;
+    color: #e0f7ff; /* light blue */
+}
+
+.mascot {
+    font-size: 1.5em;
+}
+/* ===========================
+   Navigation Bar
+   =========================== */
+.navbar {
+    background-color: #0077cc; /* blue */
+    padding: 10px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* centers the menu */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+    background-color: orange;
+    border-radius: 5px;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Keep menu centered */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply Now button */
+.apply-btn {
+    background-color: orange;
+    color: white;
+    padding: 8px 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Apply Now Button */
+.apply-btn {
+    background-color: orange;
+    color: white;
+    padding: 10px 22px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(255,165,0,0.7);
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.apply-btn:hover {
+    background-color: #005fa3;
+    box-shadow: 0 0 15px rgba(0,119,204,0.9);
+    transform: scale(1.05);
+}
+/* Scrolling slogan banner */
+.slogan-banner {
+    width: 100%;
+    overflow: hidden;
+    background-color: #eb9b07; /* blue */
+    color: white;
+    padding: 10px 0;
+}
+
+.scroll-text {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 100%;
+    animation: scroll-left 20s linear infinite;
+}
+
+/* Animation */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.contact-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.page-title {
+    text-align: center;
+    color: #003366;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+* Center all contact details text */
+.contact-info {
+    text-align: center;
+}
+
+/* Optional: make each info block look neat and spaced */
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+/* Center the section headings too */
+.contact-info h2 {
+    text-align: center;
+}
+.contact-info {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contact-info h2 {
+    color: #0077cc;
+    margin-top: 20px;
+}
+
+.contact-info a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Form styling */
+.contact-form h2 {
+    color: #0077cc;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact-form button {
+    background-color: #0077cc;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: orange;
+}/* Footer */
+footer {
+    background-color: rgba(0, 119, 204, 0.9); /* blue */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+} 
+.map-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.map-section h2 {
+    color: #0077cc;
+    margin-bottom: 15px;
+}
+
+/* Make the map responsive and centered */
+.map-section iframe {
+    max-width: 800px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+footer a {
+    color: #ffd700; /* gold/yellow for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.slogan-footer {
+    font-style: italic;
+    margin: 10px 0;
+}

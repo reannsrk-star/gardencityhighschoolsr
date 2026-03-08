@@ -1,0 +1,358 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+
+    /* Background image */
+    background: url('pictures/highb.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header */
+header {
+    background-color: rgba(255, 165, 0, 0.9); /* orange */
+    padding: 20px 0;
+    color: white;
+}
+
+/* Flex container for header */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* logo+text left, mascot right */
+    align-items: center;            /* vertically center items */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Logo + text container */
+.logo-text {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    height:200px;
+    margin-right: 20px;
+}
+
+/* Mascot image on right */
+.mascot-image img {
+    height: auto; /* match logo height */
+    width: 300px;
+}
+h1 {
+    text-align: center;
+    color: #3892d3; /* blue theme color */
+    margin-bottom: 20px;
+     text-align: center;   /* centers text */
+    font-size: 3em;       /* makes text larger */
+    font-weight: bold;    /* optional: makes it bold */
+    margin: 20px 0;       /* spacing above/below */
+    color: #07304e;  
+   font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+
+}
+
+.slogan {
+    font-size: 1.2em;
+    margin-top: 5px;
+    color: #e0f7ff; /* light blue */
+}
+
+.mascot {
+    font-size: 1.5em;
+}
+/* ===========================
+   Navigation Bar
+   =========================== */
+.navbar {
+    background-color: #0077cc; /* blue */
+    padding: 10px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* centers the menu */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+    background-color: orange;
+    border-radius: 5px;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Keep menu centered */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply Now button */
+.apply-btn {
+    background-color: orange;
+    color: white;
+    padding: 8px 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Apply Now Button */
+.apply-btn {
+    background-color: orange;
+    color: white;
+    padding: 10px 22px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(255,165,0,0.7);
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.apply-btn:hover {
+    background-color: #005fa3;
+    box-shadow: 0 0 15px rgba(0,119,204,0.9);
+    transform: scale(1.05);
+}
+/* Scrolling slogan banner */
+.slogan-banner {
+    width: 100%;
+    overflow: hidden;
+    background-color: #eb9b07; /* blue */
+    color: white;
+    padding: 10px 0;
+}
+
+.scroll-text {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 100%;
+    animation: scroll-left 20s linear infinite;
+}
+
+/* Animation */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* Main Content Container */
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.9); /* transparent white like home page */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    color: #0077cc; /* blue theme */
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Mini slogan */
+.club-slogan {
+    font-style: italic;
+    color: #07304e;
+}
+
+/* Lists */
+ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+/* Gallery */
+.gallery-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.gallery-container img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Apply Now Button */
+.apply-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.apply-btn:hover {
+    background-color: #0077cc;
+}
+
+/* Header & Logo */
+header {
+    background-color: rgba(255, 165, 0, 0.9); /* orange */
+    padding: 20px 0;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 150px;
+    margin-right: 20px;
+}
+
+.mascot-image img {
+    height: 150px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #0077cc;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: orange;
+    border-radius: 5px;
+}
+
+/* Scrolling Slogan */
+.slogan-banner {
+    width: 100%;
+    overflow: hidden;
+    background-color: #eb9b07;
+    color: white;
+    padding: 10px 0;
+}
+
+.scroll-text {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 100%;
+    animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}

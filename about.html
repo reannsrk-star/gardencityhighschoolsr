@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden City School RRSR</title>
+
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <!-- Page Header -->
+    <header>
+    <div class="header-container">
+        <!-- Left: Logo + Text -->
+        <div class="logo-text">
+            <img src="pictures/logo.png" alt="Garden City Logo" class="logo">
+            <div class="header-text">
+                <h1>Garden City School</h1>
+                <p class="slogan">"Growing Minds, Shaping Futures 🦁!"</p>
+            </div>
+        </div>
+
+        <!-- Right: Mascot Image -->
+        <div class="mascot-image">
+            <img src="pictures/29183d0a-642c-4a46-9fd2-d3ce2961ea3d_removalai_preview.png" alt="School Mascot" class="mascot-image">
+        </div>
+    </div>
+</header>
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="nav-container">
+
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="location.html">Contact Details</a></li>
+        </ul>
+
+        <a href="registrationgardencity.pdf" class="apply-btn">REGISTER NOW!</a>
+
+    </div>
+</nav>
+<div class="slogan-banner">
+    <p class="scroll-text">
+        Growing Minds, Shaping Futures • Garden City School • Excellence in Education  •  Growing Minds, Shaping Futures • Garden City School • Excellence in Education •  Growing Minds, Shaping Futures • Garden City School • Excellence in Education  • 
+    </p>
+</div>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-container">
+
+            <h1>About Us</h1>
+
+            <p>
+                Garden City School is dedicated to providing high-quality education in a safe, supportive, and inspiring environment. 
+                We aim to help students grow academically, socially, and personally so they can become confident and responsible individuals.
+            </p>
+
+            <p>
+                Our school offers a balanced curriculum that includes core subjects such as Mathematics, English, Science, and Information Technology, 
+                along with electives like Art, Music, and Business Studies. Our experienced teachers use engaging and modern teaching methods 
+                to encourage critical thinking, creativity, and a lifelong love for learning.
+            </p>
+
+            <p>
+                At Garden City, learning goes beyond the classroom. Students can participate in clubs, sports, internships, workshops, and leadership programs 
+                that help develop teamwork, discipline, and real-world skills.
+            </p>
+
+            <p>
+                We believe in strong partnerships between the school, parents, and the community. Together, we create a positive environment where every student 
+                feels valued, motivated, and prepared for a successful future.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- Image Section -->
+    <section class="about-carousel">
+
+    <div class="carousel-container">
+        <h1 class="carousel-title">Our Campus:</h1>
+        <div class="about-slide active">
+            <img src="pictures/highb.jpg" alt="School Building">
+        </div>
+        <div class="about-slide">
+            <img src="pictures/cpo.jpg" alt="Students Learning">
+        </div>
+        
+
+        <div class="about-slide">
+            <img src="pictures/campus.jpg" alt="Students Learning">
+        </div>
+
+        <div class="about-slide">
+            <img src="pictures/outcamp.jpg" alt="Students Learning">
+        </div>
+
+        <!-- Navigation buttons -->
+        <button class="carousel-btn prev" onclick="changeSlide(-1)">❮</button>
+        <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
+    </div>
+   
+</section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Contact Us: #586 George Price
+Blvd., Belmopan, Belize.| Phone: +123 456 7890 | Email: <a href="mailto:admin@gardencity.edu">admin@gardencity.edu</a></p>
+            <p class="slogan-footer">"Growing Minds, Shaping Futures"</p>
+            <p>
+                <a href="https://www.moecst.gov.bz/" target="_blank">Ministry of Education</a> |
+                <a href="registrationgardencity.pdf" target="_blank" class="apply-download">
+    Download Registration Form
+</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+let slideIndex = 0;
+const slides = document.querySelectorAll(".about-slide");
+
+function showSlide(index) {
+    slides.forEach(slide => slide.classList.remove("active"));
+    slides[index].classList.add("active");
+}
+
+function changeSlide(step) {
+    slideIndex += step;
+
+    if (slideIndex >= slides.length) slideIndex = 0;
+    if (slideIndex < 0) slideIndex = slides.length - 1;
+
+    showSlide(slideIndex);
+}
+
+// Show first slide
+showSlide(slideIndex);
+
+// Auto slide every 4 seconds
+setInterval(() => {
+    changeSlide(1);
+}, 4000);
+</script>
+
+</body>
+</html>

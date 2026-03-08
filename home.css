@@ -1,0 +1,409 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+
+    /* Background image */
+    background: url('pictures/highb.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header */
+header {
+    background-color: rgba(255, 165, 0, 0.9); /* orange */
+    padding: 20px 0;
+    color: white;
+}
+
+/* Flex container for header */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* logo+text left, mascot right */
+    align-items: center;            /* vertically center items */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Logo + text container */
+.logo-text {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    height:200px;
+    margin-right: 20px;
+}
+
+/* Mascot image on right */
+.mascot-image img {
+    height: auto; /* match logo height */
+    width: 300px;
+}
+h1 {
+    text-align: center;
+    color: #3892d3; /* blue theme color */
+    margin-bottom: 20px;
+     text-align: center;   /* centers text */
+    font-size: 3em;       /* makes text larger */
+    font-weight: bold;    /* optional: makes it bold */
+    margin: 20px 0;       /* spacing above/below */
+    color: #07304e;  
+   font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+
+}
+
+.slogan {
+    font-size: 1.2em;
+    margin-top: 5px;
+    color: #e0f7ff; /* light blue */
+}
+
+.mascot {
+    font-size: 1.5em;
+}
+/* ===========================
+   Navigation Bar
+   =========================== */
+.navbar {
+    background-color: #0077cc; /* blue */
+    padding: 10px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* centers the menu */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+    background-color: orange;
+    border-radius: 5px;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Keep menu centered */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply Now button */
+.apply-btn {
+    background-color: orange;
+    color: white;
+    padding: 8px 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Apply Now Button */
+.apply-btn {
+    background-color: orange;
+    color: white;
+    padding: 10px 22px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(255,165,0,0.7);
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.apply-btn:hover {
+    background-color: #005fa3;
+    box-shadow: 0 0 15px rgba(0,119,204,0.9);
+    transform: scale(1.05);
+}
+/* Scrolling slogan banner */
+.slogan-banner {
+    width: 100%;
+    overflow: hidden;
+    background-color: #eb9b07; /* blue */
+    color: white;
+    padding: 10px 0;
+}
+
+.scroll-text {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 100%;
+    animation: scroll-left 20s linear infinite;
+}
+
+/* Animation */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+/* Clubs & Programs Cards */
+.programs-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.program-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    width: 48%; /* two cards per row */
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.program-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.program-card h4 {
+    margin: 10px 0 5px;
+    color: #0077cc; /* blue */
+}
+
+.program-card p {
+    font-size: 0.95em;
+    color: #333;
+}
+
+/* Hover Effect */
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .program-card {
+        width: 100%; /* stack cards on small screens */
+    }
+}
+.program-link {
+    text-decoration: none;  /* removes underline */
+    color: inherit;         /* keeps text color */
+    display: block;         /* makes the <a> wrap the whole card */
+}
+
+.program-link:hover .program-card {
+    transform: scale(1.05); /* optional hover effect */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+/* Carousel Container */
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    margin: 20px 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Carousel Slides */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 250px;
+    margin: 0 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 12px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    z-index: 2;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.programs-container {
+    display: flex;        /* aligns cards in a row */
+    flex-wrap: wrap;      /* allows cards to move to the next line */
+    gap: 20px;            /* space between cards */
+    justify-content: space-between; /* distributes cards nicely */
+    margin-top: 20px;
+}
+.program-card {
+    width: 48%;           /* two cards per row */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.programs-container {
+    justify-content: center; /* centers cards if row is incomplete */
+}
+.accordion-button {
+    background-color: #0077cc; /* blue */
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: center; /* center inside card */
+    border: none;
+    outline: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Hover effect */
+.accordion-button:hover {
+    background-color: orange;
+}
+
+/* Collapsible content */
+.accordion-content {
+    padding: 10px 5px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.accordion-content p {
+    margin: 0;
+    font-size: 14px;
+}
+.more-text {
+    display: none;
+    font-size: 14px;
+    margin: 8px 10px;
+    color: #333;
+}
+
+.learn-btn {
+    margin-top: 8px;
+    padding: 6px 12px;
+    border: none;
+    background-color: orange;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.learn-btn:hover {
+    background-color: #0077cc;
+}
+
+
+/* Footer */
+footer {
+    background-color: rgba(0, 119, 204, 0.9); /* blue */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #ffd700; /* gold/yellow for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.slogan-footer {
+    font-style: italic;
+    margin: 10px 0;
+}
